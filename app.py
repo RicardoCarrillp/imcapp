@@ -53,6 +53,10 @@ def get_userinfo(id):
 def get_usersinfo():
     return jsonify({'Users': usersinfo})
 
+@app.route('/')
+def get():
+    return "hello"
+
 
 
 if __name__ == '__main__':
